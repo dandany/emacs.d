@@ -1,0 +1,18 @@
+;;; pop-neon-theme-pkg.el --- pop neon color on the dark background
+;;; Commentary:
+;;; Copyright (C) 2016 DannyV
+
+;;; Credits:
+
+;; https://github.com/ChrisKempson/Tomorrow-Theme
+;; https://github.com/scfrazer/.emacs.d/blob/master/themes/deeper-blue-theme.el
+
+;; Based on Steve Purcell's "color-theme-sanityinc-tomorrow" theme.
+;; https://github.com/purcell/color-theme-sanityinc-tomorrow/
+;; https://github.com/osener/emacs-afternoon-theme/
+
+
+;;; Code:
+(define-package "pop-neon-theme" "20160420.1" "neon in the dark color theme with a deep blue background" '((emacs "24.1")) :url "http://github.com/dandany/emacs-pop-neon-theme" :keywords '("themes"))
+(provide 'pop-neon-theme-pkg)
+;;; pop-neon-theme-pkg.el ends here

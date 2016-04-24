@@ -62,8 +62,8 @@
 
 (require 'init-editing-utils)
 
-(require 'init-vc)
-(require 'init-darcs)
+;;;(require 'init-vc)
+;;;(require 'init-darcs)
 (require 'init-git)
 (require 'init-github)
 
@@ -71,20 +71,21 @@
 (require 'init-crontab)
 (require 'init-textile)
 (require 'init-markdown)
-(require 'init-csv)
-(require 'init-erlang)
-(require 'init-javascript)
-(require 'init-php)
+;;;(require 'init-csv)
+;;;(require 'init-erlang)
+;;;(require 'init-javascript)
+;;;(require 'init-php)
 (require 'init-org)
-(require 'init-nxml)
-(require 'init-html)
+;;;(require 'init-nxml)
+;;;(require 'init-html)
 (require 'init-css)
-(require 'init-haml)
-(require 'init-python-mode)
+;;;(require 'init-haml)
+;;;(require 'init-python-mode)
+(require 'python-mode)
 (require 'init-haskell)
 (require 'init-ruby-mode)
 (require 'init-rails)
-(require 'init-sql)
+;;;(require 'init-sql)
 
 (require 'init-paredit)
 (require 'init-lisp)
@@ -145,6 +146,17 @@
             (message "init completed in %.2fms"
                      (sanityinc/time-subtract-millis after-init-time before-init-time))))
 
+(require 'font-lock+)
+
+(require 'rainbow-delimiters)
+
+(require 'package)
+
+(add-to-list 'package-archives'
+             ("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives'
+             ("melpa" . "http://melpa.milkbox.net/packages/") t)
+(package-initialize)
 
 (provide 'init)
 
